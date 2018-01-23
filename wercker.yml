@@ -1,0 +1,12 @@
+box: silviuburceadev/docker-ubuntu-java-maven
+build:
+  steps:
+    - script:
+          code: |
+            mvn -v
+            echo $JAVA_HOME
+            java -version
+            javac -version
+            mvn clean install
+
+
